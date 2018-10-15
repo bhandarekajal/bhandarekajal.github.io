@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+  * {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  max-width: 40%;
+  max-height: 40%;
+  box-shadow: 5px 10px 5px 10px; 
+  margin-top: 15%;
+
+}
+<style>
+* {
+    box-sizing: border-box;
+}
+.nav
+{
+  float: right;
+  margin-top: 2%;
+}
+.content {
+    position: fixed;
+    bottom: 500px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 4px;
+}
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 5px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contact
+{
+  margin-top: 15%;
+  margin-left: 10%;
+  color:#4169e1;
+  font-family: cursive;
+  white-space: nowrap;
+  text-shadow: 2px 2px #ff0000;
+
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.loginbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.loginbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="content">
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><img src="logo.png"/></a>
+    </div>
+    <div class="nav">
+    <ul class="nav navbar-nav" margin-left="20px">
+      <li><a href="homesample.html">Home</a></li>
+      <li><a href="AboutUs.html">About Us</a></li>
+      <li><a href="Registration.php">Registration</a></li>
+      <li><a href="donate.php">donate</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+
+    </ul>
+    <a href="login.html"><button class="btn btn-danger navbar-btn">login</button></a>
+  </div>
+
+
+  </div>
+  </nav>
+ 
+  </div>
+
+
+ <form action="login.html">
+  <div class="container">
+   <center> <h1>Login</h1></center>
+    <hr>
+
+    <label for="Username"><b>Username</b></label>
+    <input type="text" placeholder="Enter username" name="uname" required><br>
+
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="password" name="password" required><br>
+
+  
+    <hr>
+
+        <button type="submit" class="loginbtn" formaction="homesample.html">Login</button>
+  </div>
+
+  
+</form> 
+
+
+
+
+  <script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+</body>
+</html>

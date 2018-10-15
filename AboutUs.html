@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+.nav
+{
+  float: right;
+  margin-top: 2%;
+}
+.content {
+    position: fixed;
+    bottom: 500px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 4px;
+}
+</style>
+<style type="text/css">
+.team-section{
+  overflow: hidden;
+  text-align: center;
+  padding: 60px;
+  background: #34495e;
+}  
+.team-section h1{
+  text-transform: uppercase;
+  margin-bottom: 60px;
+  color: white;
+  font-size: 40px;
+  margin-top: 100px;
+
+}
+.border
+{
+  display: block;
+  margin:auto;
+  width: 160px;
+  height: 3px;
+  background: #3498db;
+  margin-bottom: 40px;
+}
+.ps
+{
+  margin-bottom: 40px;
+}
+.ps a
+{
+  display: inline-block;
+  margin: 0 30px;
+  width:160px;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 50%;
+  
+  }
+.ps a img{
+  width: 100%;
+  filter: grayscale(100%);
+  transition: 0.4s all;
+}
+.ps a :hover>img {
+  filter: none;
+}
+p
+{
+  font-size: 13px;
+
+}
+.section
+{
+  width: 600px;
+  margin:auto;
+  font-size: 200px;
+  color: white;
+  text-align: justify;
+}
+.name
+{
+  display: block;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+</style>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="content">
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><img src="logo.png" height="40px" width="40px" /> </a>
+    </div>
+    <div class="nav">
+    <ul class="nav navbar-nav" margin-left="20px">
+      <li class="homesample.html"><a href="homesample.html">Home</a></li>
+      <li><a href="AboutUs.html">About Us</a></li>
+      <li><a href="Registration.php">Registration</a></li>
+      <li><a href="donate.php">donate</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+
+    </ul>
+    <a href="login.php"><button class="btn btn-danger navbar-btn">login</button></a>
+  </div>
+  </div>
+  </nav>
+  </div>
+   <div class="team-section">
+     <h1>Our Team</h1>
+     <span class="border"></span>
+     <div class="ps">
+       <a href="#"><img src="p1.jpg" alt=""></a>
+       <span class="name">Birnale Prachi</span>
+      
+       <a href="#"><img src="p2.png" alt=""></a>
+       <span class="name">Bhandare kajal</span>
+      <a href="#"><img src="p3.jpg" alt=""></a>
+      <span class="name">Naik Prajkta</span>
+      <a href="#"><img src="p5.jpg" alt=""></a>
+      
+      <span class="name">Nikam Rutuja</span>
+      
+     </div>
+     <div class="section" id="p1">
+       <span class="name">Desai Shruti</span>
+     
+      
+      </div>
+</body>
+</html>

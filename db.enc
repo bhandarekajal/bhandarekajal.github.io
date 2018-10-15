@@ -1,0 +1,72 @@
+<?php
+$server="localhost";
+$username="root";
+$password="";
+$db="student";
+
+$i=$_POST['id'];
+$n=$_POST['name'];
+$s=$_POST['stre'];
+$t=$_POST['tech'];
+$c=$_POST['cont'];
+
+$con=mysqli_connect($server,$username,$password,$db);
+if($con)
+{
+	if(isset($_POST['inse']))
+	{
+		$sql="insert into studinfo values('$i','$n','$s','$t','$c')";
+		$result=mysqli_query($con,$sql);
+		if($result>0)
+		{
+			echo"Record added successfully";
+		}
+	}
+	if(isset($_POST['dele']))
+	{
+		$sql="dele from studinfo where id='$i'";
+		$result=mysqli_query($con,$sql);
+		echo"record deleted";
+	}
+	if(isset($_POST['upda']))
+	{
+		$sql="update studinfo set Name='$n',Strength='$s',Technical subject='$t',Contact='$c' where Id='$i'";
+		$result=mysqli_query($con,$sql);
+		echo"data updated successfully";
+
+	}
+	if(isset($_POST['show']))
+	{
+		$sql="select * from studinfo where Id='$i'";
+		$result=mysqli_query($con,$sql);
+
+		while($res=mysqli_fetch_array($result))
+		{
+		    $id1=$res['Id'];
+            $na1=$res['Name'];
+            $st1=$res['Strength'];
+            $te1=$res['Technical subject'];
+            $co1=$res['Contact'];
+
+
+            echo " ID is :" .$id1."<br>";
+            echo " Name is :" .$na1."<br>";
+            echo " Strength is :" .$st1."<br>";
+            echo " Technical subject is :" .$te1."<br>";
+            echo " Contact is :" .$co1."<br>";
+
+		}
+
+	}
+
+
+
+
+}
+
+
+
+
+
+
+?>
